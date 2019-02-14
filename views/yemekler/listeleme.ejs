@@ -1,0 +1,43 @@
+<% include ../partials/header %>
+		
+<div class="container">
+	<h3><%= yemek.adi%></h3>
+	<img src="<%= yemek.resim %>">	
+	<hr>	
+	<% yemek.yorumlar.forEach(function(yorum){ %>
+		<p><strong><%=yorum.yazar%></strong> -- <%=yorum.text%></p>
+	<% }); %>
+
+	<p>
+		<a class="btn btn-success" href="/yemekler/<%=yemek._id%>/yorumlar/yeni">yorum ekle</a>
+	</p>
+	<h1>  <%= yemek.adi%> için bulunan sonuçlar </h1>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Puan</th>
+				<th>Restoran Adı</th>
+			</tr>
+		</thead>
+		<tbody>
+					
+			<tr>
+				<td> 9.3</td>
+				<td>İnci pastanesi</td>
+			</tr>
+			<tr>
+				<td> 9.1</td>
+				<td>Elit pastanesi</td>
+			</tr>
+			<tr>
+				<td> 9.0</td>
+				<td>Petit pastanesi</td>
+			</tr>
+			<tr>
+				<td> 8.7</td>
+				<td>Gül pastanesi</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<% include ../partials/footer %>

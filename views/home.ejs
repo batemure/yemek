@@ -1,0 +1,48 @@
+<% include partials/header %>
+
+
+
+<div class="container">
+	<h1>Ana Sayfa</h1>
+	<hr>
+	<a href="/yemekler">Yemekler</a>
+	<hr>
+	<a href="/yemekler/yeni">Yeni Yemek Ekle</a>
+	<hr>
+
+	<h1> En iyi yapan restoranı bulmak için aramaya başlayın </h1> 
+	<form action="">
+		<div class="form-group">
+			<label for="yemek"> Aradığım yemek: </label>
+			<input type="yemek" class="form-control" id="text" placeholder="ör: sütlaç" name="yemek">
+		</div>
+		<button type="submit" class="btn btn-primary">Ara</button>
+	</form>
+
+	<div class="row">
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="https://t4.ftcdn.net/jpg/00/70/25/31/240_F_70253118_CLtjwUYruTYS0COsrMszsk12IEIxb46d.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="https://t3.ftcdn.net/jpg/00/92/72/74/240_F_92727406_ndLGzmV1P1X5FbbwPvbqpHGdfomBKHqy.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="https://t3.ftcdn.net/jpg/00/75/75/88/240_F_75758806_9lpzs9FdVB5bTQ8s1AxmYeFVMgDU8pe8.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="https://t3.ftcdn.net/jpg/00/97/16/60/240_F_97166071_YbL3Zm1ddtYsAIU68h85LJOn2qgYdNa1.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+	<% include partials/footer %>
+</div>
+
+

@@ -1,0 +1,32 @@
+<% include ../partials/header %>
+<div class="container">
+	<header class="jumbotron">
+		<h1>Yemekler</h1>
+		<p><a class="btn btn-primary btn-large" href="/yemekler/yeni">Yeni Yemek Ekle</a></p>
+	
+	</header>
+
+	
+	<div class="row">
+		<% yemekler.forEach(function(yemek){  %>
+			<div class="col-md-3 col-sm-6">
+				<div class="thumbnail">
+					<img src= <%= yemek.resim %>>
+					<div class="caption text-center">
+						<h3><%= yemek.adi%></h3>
+						<p>
+							<a href="/yemekler/<%= yemek._id%>" class="btn btn-primary">Git</a>
+						</p>
+					</div>	
+				</div>
+									
+			</div>	
+		<% }); %>
+	</div>
+	<% include ../partials/footer %>
+</div>
+
+
+
+
+
